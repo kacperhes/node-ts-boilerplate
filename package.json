@@ -4,16 +4,20 @@
   "description": "A boilerplate for Node.js, Express.js, TypeScript server app",
   "main": "./src/app.ts",
   "repository": "git@github.com:kacperhes/node-ts-boilerplate.git",
-  "author": "Kacper Hes",
+  "author": {
+    "name": "Kacper Hes",
+    "url": "https://github.com/kacperhes"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register ./src/app.ts",
-    "start": "node -r tsconfig-paths/register ./bin/app.js",
+    "test": "jest --verbose --coverage",
+    "test:watch": "jest --watch",
+    "lint": "tslint --project tsconfig.json",
+    "format": "prettier --write \"**/*.{ts, js, html, css, scss, json, md}\"",
     "build": "tsc",
-    "test:unit": "jest",
-    "format": "prettier --write '**/*.{ts, js, html, css, scss, json}'",
-    "lint": "tslint tslint.json 'src/**/*.ts'"
+    "dev": "ts-node-dev -r tsconfig-paths/register ./src/app.ts",
+    "start": "node -r tsconfig-paths/register ./bin/app.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
