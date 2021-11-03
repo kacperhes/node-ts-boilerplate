@@ -1,3 +1,13 @@
-bin 
-coverage
+# node modules
 node_modules
+
+# tests coverage
+coverage
+
+# production folders (choose the name of your folder)
+bin
+dist
+build
+
+# InteliJ
+.idea/
