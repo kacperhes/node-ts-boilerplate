@@ -1,6 +1,16 @@
-.idea
-bin
+# node modules
 node_modules
+
+# tests coverage
 coverage
 
+# production folders (choose one)
+bin
+build
+dist
+
+# yarn logs
 yarn-error.log
+
+# InteliJ 
+.idea/
